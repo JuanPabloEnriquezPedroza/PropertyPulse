@@ -1,16 +1,19 @@
 import React from "react";
-import '@/assets/styles/globals.css'
+import "@/assets/styles/globals.css";
+import Navbar from "@/components/Navbar";
 
-export const metadata = { //SEO information
-    title: 'PropertyPulse | Find The Perfect Rental',
-    description: 'Find your dream rental property',
-}
+export const metadata = {
+  //SEO information
+  title: "PropertyPulse | Find The Perfect Rental",
+  description: "Find your dream rental property",
+};
 
 const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
