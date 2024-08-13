@@ -11,7 +11,7 @@ const PropertyHeaderImage = (image) => {
             width={0}
             height={0}
             sizes="100vw"
-            src={`/images/properties/${image.image}`}
+            src={image.image}
             className="object-cover h-[400px] w-full"
           />
         </div>

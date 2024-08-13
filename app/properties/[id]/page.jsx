@@ -3,8 +3,9 @@ import Link from "next/link";
 import Property from "@/models/Property";
 import connectDB from "@/config/database";
 import { FaArrowLeft } from "react-icons/fa";
-import PropertyHeaderImage from "@/components/PropertyHeaderImage";
+import PropertyImages from "@/components/PropertyImages";
 import PropertyDetails from "@/components/PropertyDetails";
+import PropertyHeaderImage from "@/components/PropertyHeaderImage";
 
 const PropertyPage = async ({ params }) => {
   await connectDB();
@@ -29,6 +30,7 @@ const PropertyPage = async ({ params }) => {
           <PropertyDetails property={property} />
         </div>
       </section>
+      <PropertyImages images={property.images} />
     </>
   );
 };
