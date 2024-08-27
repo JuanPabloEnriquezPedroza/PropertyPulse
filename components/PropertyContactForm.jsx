@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useSession } from "next-auth/react";
-import { FaPaperPlane } from "react-icons/fa";
 import addMessage from "@/app/actions/addMessage";
 import { useFormState } from "react-dom";
 import SubmitMessageButton from "./SubmitMessageButton";
@@ -47,6 +46,7 @@ const PropertyContactForm = ({ property }) => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
+              name="name"
               type="text"
               placeholder="Enter your name"
               required
@@ -62,6 +62,7 @@ const PropertyContactForm = ({ property }) => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
+              name="email"
               type="email"
               placeholder="Enter your email"
               required
@@ -77,6 +78,7 @@ const PropertyContactForm = ({ property }) => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="phone"
+              name="phone"
               type="text"
               placeholder="Enter your phone number"
             />
@@ -91,6 +93,7 @@ const PropertyContactForm = ({ property }) => {
             <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
               id="body"
+              name="body"
               placeholder="Enter your body"
             ></textarea>
           </div>
