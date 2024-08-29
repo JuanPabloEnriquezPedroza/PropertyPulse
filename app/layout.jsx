@@ -1,5 +1,6 @@
 import React from "react";
 import "@/assets/styles/globals.css";
+import "photoswipe/dist/photoswipe.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "react-toastify/dist/ReactToastify.css";
